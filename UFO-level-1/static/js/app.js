@@ -1,6 +1,7 @@
 // from data.js
 var tableData = data;
 
+
 // create references
 var table = d3.select("tbody");
 var form = d3.select("#form1");
@@ -8,6 +9,7 @@ var filter_button = d3.select("#filter-btn");
 var reset_button = d3.select("#reset-btn");
 var msg = d3.select("#message");
 var date_in = d3.select("#datetime");
+
 
 // Method to render the table on page 
 loadTable=(tdata)=>{
@@ -29,6 +31,7 @@ loadTable=(tdata)=>{
         });
     });
 }
+
 
 // Method to print message on page in case searched data is not found.
 printMessage=(message)=>{
@@ -79,6 +82,7 @@ filterData=()=>{
     }
 }
 
+
 // Method to reset the filters to default, i.e load default page.
 reset_filter=()=>{
     
@@ -91,6 +95,7 @@ reset_filter=()=>{
     // Load the default data. 
     loadTable(tableData)
 }
+
 
 // Creating event handlers 
 form.on("submit", filterData);
