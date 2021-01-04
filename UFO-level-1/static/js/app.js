@@ -4,7 +4,6 @@ var tableData = data;
 
 // create references
 var table = d3.select("tbody");
-var form = d3.select("#form1");
 var filter_button = d3.select("#filter-btn");
 var reset_button = d3.select("#reset-btn");
 var msg = d3.select("#message");
@@ -32,6 +31,8 @@ loadTable=(tdata)=>{
     });
 }
 
+// Render the data.js (table) | default view
+loadTable(tableData);
 
 // Method to print message on page in case searched data is not found.
 printMessage=(message)=>{
@@ -98,6 +99,5 @@ reset_filter=()=>{
 
 
 // Creating event handlers 
-form.on("submit", filterData);
 filter_button.on("click", filterData);
 reset_button.on("click", reset_filter);
