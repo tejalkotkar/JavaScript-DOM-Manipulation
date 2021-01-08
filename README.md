@@ -29,19 +29,19 @@ Advanced - Search criteria is not entered. Please click on Reset to load all sig
 ### Previews
 
 #### Basic Site:
-![1_Basic_Search.png](Images/1_Basic_Search.png)
+![1_Basic_Search.png](Images/1_Basic_Search.PNG)
 
 #### Error Message 1:
-![2_Basic_Error_Message1.png](Images/2_Basic_Error_Message1.png)
+![2_Basic_Error_Message1.png](Images/2_Basic_Error_Message1.PNG)
 
 #### Error Message 2:
-![3_Basic_Error_Message2.png](Images/3_Basic_Error_Message2.png)
+![3_Basic_Error_Message2.png](Images/3_Basic_Error_Message2.PNG)
 
 #### Advanced Site:
-![4_Advanced_Search.png](Images/4_Advanced_Search.png)
+![4_Advanced_Search.png](Images/4_Advanced_Search.PNG)
 
 #### Error Message 1:
-![5_Advanced_Error_Message1.png](Images/5_Advanced_Error_Message1.png)
+![5_Advanced_Error_Message1.png](Images/5_Advanced_Error_Message1.PNG)
 
 #### Error Message 2:
-![6_Advanced_Error_Message2.png](Images/6_Advanced_Error_Message2.png)
+![6_Advanced_Error_Message2.png](Images/6_Advanced_Error_Message2.PNG)
