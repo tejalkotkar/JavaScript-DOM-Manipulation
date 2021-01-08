@@ -45,7 +45,7 @@ printMessage=(message)=>{
 };
 
 
-// Method to invoke once clicked on filter table button or form is submitted.
+// Method to invoke once clicked on filter table button.
 filterData=()=>{
 
     // Prevent the page from refreshing
