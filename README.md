@@ -1,6 +1,7 @@
 # javascript-challenge
 A webpage for UFO sightings that uses JavaScript, HTML, and CSS, and D3.js. 
-Website Link : https://tejalkotkar.github.io/javascript-challenge/UFO-level-1
+
+**Website Link** : https://tejalkotkar.github.io/javascript-challenge/UFO-level-1
 
 This project demonstrates the use of Javascript to create an interactive website, specifically using D3.js to collect HTML form elements and adding event triggers to elements on the page to filter the given dataset based on filter criteria(user input). The dataset is a sample set of UFO sightings in the US & CA(the first two weeks of January 2010 only).
 
