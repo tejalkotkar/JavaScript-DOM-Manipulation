@@ -73,13 +73,16 @@ filterData=()=>{
 
     if(shape_in.property("value")!="") filter_criteria['shape']=shape_in.property("value");
 
+    // check if there is any filtering criteria added.
     if (Object.keys(filter_criteria).length > 0){
         var filtered_data = tableData;
 
+        // Filter the data depending on the filter criteria entered by iterating over filter_criteria object.
         Object.entries(filter_criteria).forEach(([key, value])=>{
             filtered_data = filtered_data.filter(ufo => ufo[key] === value);
         });
 
+        // Execute the below code block if there is any data filtered
         if(filtered_data.length > 0){
 
             // Call load table function with filtered data to render it on page.
@@ -94,6 +97,7 @@ filterData=()=>{
         }
 
     }
+    // Execute below code if there is no search criteria entered and clicked on Filter Table button
     else{
         message = "Search criteria is not entered. Please click on Reset to load all sightings.";
 
@@ -106,7 +110,7 @@ filterData=()=>{
 // Method to reset the filters to default, i.e load default page.
 reset_filter=()=>{
     
-    // Remove the date entered and clear the input.
+    // Remove the input (filter criteria).
     date_in.property("value","");
     city_in.property("value","");
     state_in.property("value","");
