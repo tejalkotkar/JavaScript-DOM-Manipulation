@@ -38,7 +38,7 @@ loadTable=(tdata)=>{
             row.append("td").text(value);
         });
     });
-}
+};
 
 // call method to render the data.js (table) | default view
 loadTable(tableData);
@@ -51,7 +51,7 @@ printMessage=(message)=>{
 
     // Add message
     msg.text(message);
-}
+};
 
 
 // Method to invoke once clicked on filter table button or form is submitted.
@@ -100,7 +100,7 @@ filterData=()=>{
         // Call the printMessage function to print the message on page.
         printMessage(message);
     }    
-}
+};
 
 
 // Method to reset the filters to default, i.e load default page.
@@ -118,7 +118,7 @@ reset_filter=()=>{
 
     // Load the default data. 
     loadTable(tableData)
-}
+};
 
 
 // Creating event handlers 
