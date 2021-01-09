@@ -29,7 +29,7 @@ loadTable=(tdata)=>{
     tdata.forEach(ufo => {
 
         // Add row for each object to render.
-        row = table.append("tr");
+        var row = table.append("tr");
 
         // Iterate through each entry (key-value pair) in object.
         Object.entries(ufo).forEach(([key, value])=> {
@@ -60,7 +60,7 @@ filterData=()=>{
     // Prevent the page from refreshing
     d3.event.preventDefault();
 
-    filter_criteria = {};
+    var filter_criteria = {};
 
     // Get the value property of the input elements
     if(date_in.property("value")!="") filter_criteria['datetime']=date_in.property("value");
@@ -90,7 +90,7 @@ filterData=()=>{
         }
         // Print the message if no data has returned.
         else {
-            message = "No sighting found for searched criteria entered. Enter another criteria or click on Reset to load all sightings.";
+            var message = "No sighting found for searched criteria entered. Enter another criteria or click on Reset to load all sightings.";
 
             // Call the printMessage function to print the message on page.
             printMessage(message);
@@ -99,7 +99,7 @@ filterData=()=>{
     }
     // Execute below code if there is no search criteria entered and clicked on Filter Table button
     else{
-        message = "Search criteria is not entered. Please click on Reset to load all sightings.";
+        var message = "Search criteria is not entered. Please click on Reset to load all sightings.";
 
         // Call the printMessage function to print the message on page.
         printMessage(message);
